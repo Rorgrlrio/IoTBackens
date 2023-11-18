@@ -87,4 +87,5 @@ data = {
     "temp": data_final[5],
 }
 
-db.collection('chart').document('predictions').set(data)
+db.collection('chart').document('prediction_day').set(data)
+db.collection('average_prediction').add(data)
